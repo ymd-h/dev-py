@@ -1,4 +1,4 @@
-with import <nixpkgs> {};
+with import (fetchTarball "https://github.com/NixOS/nixpkgs/archive/24.05.tar.gz") {};
 let
   hatch-config = ({
     x86_64-linux = {
